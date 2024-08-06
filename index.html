@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Resume Builder</h1>
+    </header>
+    <main>
+        <section id="template-selection">
+            <h2>Select a Resume Template</h2>
+            <div id="templates">
+                <!-- Templates will be added here -->
+            </div>
+        </section>
+        <section id="resume-builder">
+            <h2>Build Your Resume</h2>
+            <form id="resume-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div id="education-section">
+                    <h3>Education</h3>
+                    <!-- Education fields will be added here -->
+                </div>
+                <button type="button" id="add-education">Add Education</button>
+                <div id="experience-section">
+                    <h3>Work Experience</h3>
+                    <!-- Experience fields will be added here -->
+                </div>
+                <button type="button" id="add-experience">Add Experience</button>
+                <div id="skills-section">
+                    <h3>Skills</h3>
+                    <!-- Skills fields will be added here -->
+                </div>
+                <button type="button" id="add-skill">Add Skill</button>
+                <button type="button" id="preview-resume">Preview Resume</button>
+            </form>
+        </section>
+        <section id="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="resume-output">
+                <!-- Resume preview will be shown here -->
+            </div>
+            <button id="download-pdf">Download as PDF</button>
+            <button id="download-word">Download as Word</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
